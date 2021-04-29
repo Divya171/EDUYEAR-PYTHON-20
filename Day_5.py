@@ -46,3 +46,4 @@ for t in num:
     else:
         print("It is not a palindrome")
 print("the numbers which are palindrome are:{}".format(palindromes))    
+                                                      
