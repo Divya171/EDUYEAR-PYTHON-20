@@ -16,15 +16,7 @@ Q3. Check whether the whole list is palindrome or not( eg. [1,2,1] gives yes for
 Q4. Print the numbers which are palindrome inside the list
 
 
-# In[17]:
 
-
-num = [1,2,3,4,5,6,7,8,9,10]
-
-even = 0
-odd = 0
-
-for i in num:
     if i%2 == 0:
         even+=1
     else:
@@ -44,10 +36,13 @@ for k in num:
         low=k
 print("min:",low)
 
-rev_num = num[::-1]
-
-if num == rev_num:
-    print("it is a palindrome")
-else:
-    print("it is not a palindrome")
-
+palindromes = []
+for t in num:
+    t = str(t)
+    print(t[::-1])
+    if t == t[::-1]:
+        print("It is a palindrome")
+        palindromes.append(t)
+    else:
+        print("It is not a palindrome")
+print("the numbers which are palindrome are:{}".format(palindromes))    
